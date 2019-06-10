@@ -2,14 +2,16 @@ package com.epam.electrics;
 
 
 
-public class State extends StateElectrics implements BehaviorElectrics{
+public class State extends StateElectrics {
 
 //Specifying the connection values of electrical devices in the circuit ("on" / "off")
 	
+	
+	
 		public String[] mass = new String[5]; {
 			try {
-		mass[0] = new String(powerSupply="on");
-		mass[1] = new String(powerSupply="off");
+		mass[0] = new String(powerSupply="off");
+		mass[1] = new String(powerSupply="on");
 		mass[2] = new String(powerSupply="off");
 		mass[3] = new String(powerSupply="on");
 		mass[4] = new String(powerSupply="off");

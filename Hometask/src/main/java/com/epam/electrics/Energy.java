@@ -1,20 +1,20 @@
 package com.epam.electrics;
 
-//import com.epam.electrics.BehaviorElectrics;
+
 
 
 public class Energy extends StateElectrics {
 
 
-//Input of power values of electrical appliances	
+//	Entering the power values ​​of electrical devices 	
 	public Integer[] mass = new Integer[5] ;
 	{
 		try {
-		mass[0] = new Integer(valueEnergy=7); 
-		mass[1] = new Integer(valueEnergy=65);
-		mass[2] = new Integer(valueEnergy=12);
-		mass[3] = new Integer(valueEnergy=67);
-		mass[4] = new Integer(valueEnergy=23);
+		mass[0] = new Integer(valueEnergy); 
+		mass[1] = new Integer(valueEnergy);
+		mass[2] = new Integer(valueEnergy);
+		mass[3] = new Integer(valueEnergy);
+		mass[4] = new Integer(valueEnergy);
 		}
 		
 		catch(NullPointerException ex) {

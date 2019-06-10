@@ -2,7 +2,7 @@ package com.epam.electrics;
 
 
 
-public class ProducingCountry extends StateElectrics implements BehaviorElectrics{
+public class ProducingCountry extends StateElectrics {
 	
 	//Specifying manufacturer country values
 	
@@ -18,8 +18,6 @@ public class ProducingCountry extends StateElectrics implements BehaviorElectric
 		ex.printStackTrace();
 	} catch(ArrayStoreException ex1) {
 		ex1.printStackTrace();
-	} catch (ArrayIndexOutOfBoundsException  ex2) {
-		ex2.printStackTrace();
 	}
 	}
 }
