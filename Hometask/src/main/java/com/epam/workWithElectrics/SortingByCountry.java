@@ -11,32 +11,30 @@ import com.epam.exception.ExceptionSizeArray;
 
  public class SortingByCountry extends ProducingCountry{
 
-	NameElectrics nameElectrics = new NameElectrics();
+	 NameElectrics nameElectrics = new NameElectrics();
 	
 	//sorting electrical equipment according to the country of manufacturer (Germany)
 	
-	public void sorting() {
+	public void sorting() throws ExceptionSizeArray {
 		try {
-		write();
-		test();
-		sereliz();
-		desareliz();
+			sereliz();
+		  desareliz();
 		} catch(NullPointerException ex) {
 			ex.printStackTrace();
 		}
 	}
 	
-public String resultSorting() throws ExceptionSizeArray{
+protected Object resultSorting() throws ExceptionSizeArray{
 	try {
 	ProducingCountry producingCountry = new ProducingCountry();
-		int index = -1;
-	  for (int i = 0; i < mass.length; i++) {
-		  if(mass.length != 5) throw new ExceptionSizeArray("check size array");
+	nameElectrics.addListElectrics();
+	  for (int i = 0; i != nameElectrics.listElektrics.size(); i++) {
+		  if(nameElectrics.listElektrics.size() != 5) throw new ExceptionSizeArray("check size array");
 		      if ("Germany".equals(mass[i])) {
-	          index = i;
-	          System.out.println("Result search:" + nameElectrics.mass[i]);
-	          String result = nameElectrics.mass[i];
-	         name =  nameElectrics.mass[i];
+	         
+	          System.out.println("Result search:" + nameElectrics.listElektrics.get(i));
+	       Object result = nameElectrics.listElektrics.get(i);
+	       Object  name =  nameElectrics.listElektrics.get(i);
 		  		} 
 	  }
 	 }  catch(IndexOutOfBoundsException  ex1) {
@@ -52,17 +50,9 @@ public String resultSorting() throws ExceptionSizeArray{
 	}
 
 		     
-private void write() {
-	Writer writer = new Writer();
-	writer.writeSearch();
-}
 
-private void test() {
-	TxtResult txtResult = new TxtResult();
-	txtResult.resultSearch();
-}
 
-private void sereliz() {
+private void sereliz() throws ExceptionSizeArray {
 	Seraliz seraliz = new Seraliz();
 	seraliz.seralizResult();
 }

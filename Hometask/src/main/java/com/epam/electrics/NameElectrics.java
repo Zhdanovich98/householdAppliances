@@ -1,34 +1,31 @@
 package com.epam.electrics;
 
+import java.util.ArrayList;
 
 
-public class NameElectrics extends StateElectrics implements BehaviorElectrics{
+public class NameElectrics{ 
 
+	//collection for working with name electrics
+	public ArrayList<Object> listElektrics = new ArrayList<Object>();
 	//Input of five electrical appliances
-	
-	
-	
-	public String[] mass = new String[5];
-	{ 
-		try {
-		mass[0] = new String(name="Television");
-		mass[1] = new String(name="Phone");
-		mass[2] = new String(name="Iron");
-		mass[3] = new String(name="Teapot");
-		mass[4] = new String(name="Coffee machine");
+	private enum Electrics {
+		Television, Phone, Iron, Teapot, Coffee_machine
 	}
+	//add name electrics in collection
+	public void addListElectrics() {
+	try {
+		Electrics[] allname = Electrics.values();
+	for( Electrics name1 : allname) {
+		listElektrics.add(name1);
+	}
+	}
+	
 	catch(NullPointerException ex) {
 		ex.printStackTrace();
 	} catch(ArrayStoreException ex1) {
 		ex1.printStackTrace();
-	} catch (ArrayIndexOutOfBoundsException  ex2) {
-		ex2.printStackTrace();
+	} 
 	}
-	}
-	
-		
-		
-
 }
 
 

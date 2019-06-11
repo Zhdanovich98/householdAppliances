@@ -1,9 +1,10 @@
 package com.epam.exception;
-import com.epam.electrics.State;
+
 
 public class ExceptionDeseraliz extends Exception {
-//	State state = new State();
 
+	//Exception for work with Deseralization
+	
 public ExceptionDeseraliz(String message) {
 	 super(message);
 }
